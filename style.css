@@ -1,229 +1,282 @@
 /* ===== Reset ===== */
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* ===== Base Styling ===== */
-
+/* ===== Base ===== */
 body{
-font-family:'Inter', sans-serif;
-background:#faf9f7;
-color:#2f2f2f;
-line-height:1.6;
+  font-family:'Inter', sans-serif;
+  background:#faf9f7;
+  color:#2f2f2f;
+  line-height:1.6;
 }
 
 /* ===== Header ===== */
-
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:white;
-border-bottom:1px solid #eee;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+  background:white;
+  border-bottom:1px solid #eee;
+  flex-wrap:wrap;
 }
 
-header h1{
-font-family:'Playfair Display', serif;
-font-size:1.9rem;
-letter-spacing:1px;
+.logo-container{
+  display:flex;
+  align-items:center;
+  gap:19px;
+}
+
+.logo-badge{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:#b98b5f;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.5rem;
+  color:white;
+}
+
+.logo-text h1{
+  font-family:'Playfair Display', serif;
+  font-size:2rem;
+  letter-spacing:1px;
+  color:#2a2a2a;
+}
+
+.logo-text .tagline{
+  font-family:'Inter', sans-serif;
+  font-size:.90rem;
+  letter-spacing:2px;
+  color:#8a8a8a;
+  margin-top:3px;
 }
 
 /* ===== Navigation ===== */
-
 nav ul{
-list-style:none;
-display:flex;
-gap:30px;
+  list-style:none;
+  display:flex;
+  gap:30px;
 }
 
 nav a{
-text-decoration:none;
-color:#444;
-font-weight:500;
-position:relative;
-transition:color .3s;
+  text-decoration:none;
+  color:#444;
+  font-weight:550;
+  position:relative;
+  transition: color .3s;
 }
 
-/* sleek underline animation */
-
 nav a::after{
-content:"";
-position:absolute;
-width:0%;
-height:2px;
-left:0;
-bottom:-6px;
-background:#b98b5f;
-transition:.3s;
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  left:0;
+  bottom:-6px;
+  background:#b98b5f;
+  transition:.3s;
 }
 
 nav a:hover{
-color:#b98b5f;
+  color:#b98b5f;
 }
 
 nav a:hover::after{
-width:100%;
+  width:100%;
 }
 
 /* ===== Hero Section ===== */
-
 .hero{
-text-align:center;
-padding:80px 10%;
-background:#f3f1ed;
+  height:70vh;
+  background-image:url("images/breakfast-hero.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+}
+
+.hero-overlay{
+  background:rgba(0,0,0,0.35);
+  padding:50px;
+  border-radius:10px;
+  color:white;
 }
 
 .hero h2{
-font-family:'Playfair Display', serif;
-font-size:2.6rem;
-margin-bottom:15px;
+  font-family:'Playfair Display', serif;
+  font-size:2.8rem;
+  margin-bottom:15px;
 }
 
 .hero p{
-max-width:600px;
-margin:auto;
-font-size:1.05rem;
-color:#555;
+  margin-bottom:20px;
+  font-size:1.1rem;
+}
+
+.hero-button{
+  background:#b98b5f;
+  color:white;
+  padding:12px 24px;
+  text-decoration:none;
+  border-radius:6px;
+  transition:.3s;
+}
+
+.hero-button:hover{
+  background:#a1764c;
 }
 
 /* ===== Services Section ===== */
-
 .services{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:70px 8%;
-flex-wrap:wrap;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  padding:70px 8%;
 }
 
 /* ===== Service Cards ===== */
-
 .service{
-width:280px;
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 6px 20px rgba(0,0,0,0.05);
-transition:all .35s ease;
-cursor:pointer;
+  width:350px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+  transition:all .35s ease;
+  cursor:pointer;
 }
-
-/* Images */
 
 .service img{
-width:100%;
-height:180px;
-object-fit:cover;
-display:block;
-transition:transform .4s ease;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+  transition:transform .4s ease;
 }
 
-/* Text */
-
 .service h3{
-font-family:'Playfair Display', serif;
-padding:18px 18px 5px 18px;
-font-size:1.25rem;
+  font-family:'Playfair Display', serif;
+  padding:18px 18px 5px 18px;
+  font-size:1.25rem;
 }
 
 .service p{
-padding:0 18px 22px 18px;
-color:#666;
-font-size:.95rem;
+  padding:0 18px 22px 18px;
+  color:#666;
+  font-size:.95rem;
 }
 
-/* Hover effect */
-
 .service:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 35px rgba(0,0,0,0.12);
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.12);
 }
 
 .service:hover img{
-transform:scale(1.08);
+  transform:scale(1.08);
 }
 
-/* ===== CTA Section ===== */
-
+/* ===== CTA Update Section ===== */
 .cta-form{
-text-align:center;
-padding:70px 10%;
-background:white;
-border-top:1px solid #eee;
+  text-align:center;
+  padding:70px 10%;
+  background:white;
+  border-top:1px solid #eee;
 }
 
 .cta-form h3{
-font-family:'Playfair Display', serif;
-margin-bottom:20px;
-font-size:1.6rem;
+  font-family:'Playfair Display', serif;
+  margin-bottom:20px;
+  font-size:1.6rem;
 }
 
 .cta-form input{
-padding:12px;
-width:260px;
-border:1px solid #ddd;
-border-radius:6px;
-font-family:'Inter', sans-serif;
+  padding:12px;
+  width:260px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-family:'Inter', sans-serif;
 }
 
 .cta-form button{
-padding:12px 20px;
-border:none;
-margin-left:10px;
-background:#b98b5f;
-color:white;
-border-radius:6px;
-font-weight:500;
-cursor:pointer;
-transition:.3s;
+  padding:12px 20px;
+  border:none;
+  margin-left:10px;
+  background:#b98b5f;
+  color:white;
+  border-radius:6px;
+  font-weight:500;
+  cursor:pointer;
+  transition:.3s;
 }
 
 .cta-form button:hover{
-background:#a1764c;
+  background:#a1764c;
 }
 
 /* ===== Footer ===== */
-
 footer{
-text-align:center;
-padding:35px;
-background:#1f1f1f;
-color:#ddd;
-font-size:.9rem;
+  text-align:center;
+  padding:35px;
+  background:#1f1f1f;
+  color:#ddd;
+  font-size:.9rem;
 }
 
-/* ===== Mobile Responsive ===== */
+/* ===== Smooth Scroll ===== */
+html{
+  scroll-behavior:smooth;
+}
 
+/* ===== Mobile Responsiveness ===== */
 @media(max-width:768px){
 
 header{
-flex-direction:column;
-gap:15px;
+  flex-direction:column;
+  gap:15px;
+  text-align:center;
+}
+
+.logo-container{
+  flex-direction:column;
+  gap:8px;
 }
 
 nav ul{
-flex-direction:column;
-gap:10px;
-text-align:center;
+  flex-direction:column;
+  gap:10px;
 }
 
 .services{
-flex-direction:column;
-align-items:center;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
 }
 
 .cta-form input{
-width:100%;
-margin-bottom:12px;
+  width:100%;
+  margin-bottom:12px;
 }
 
 .cta-form button{
-width:100%;
-margin-left:0;
+  width:100%;
+  margin-left:0;
+}
+
+.hero h2{
+  font-size:2rem;
+}
+
+.hero p{
+  font-size:1rem;
 }
 
 }
