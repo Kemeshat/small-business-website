@@ -1,36 +1,44 @@
-**🥞 Chubby's Breakfast Café**
+**🥞 Soleil Kitchen & Bar- Restaurant Landing Page**
 
-Chubby's Breakfast Café is a responsive landing page for a small breakfast restaurant. The website showcases menu highlights such as pancakes, omelettes, and coffee, while providing a clean and modern user interface. It also includes an interactive feature that allows users to update the call-to-action (CTA) headline in real time.
+A responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript. Features a live tabbed menu with food photography, scroll-triggered animations, an interactive gallery lightbox, and real-time DOM manipulation.
 
 **💻 Technologies Used**
 
-HTML
+- HTML5
 
-CSS (Flexbox for layout, responsive design)
+- CSS3 (Flexbox, Grid, Custom Properties, Animations)
 
-JavaScript (DOM manipulation)
+- JavaScript (ES6+, DOM API, IntersectionObserver)
+
+- Google Fonts
 
 **🚀 How to Run the Project**
 
-Download or clone the repository
+- Download or clone the repository
 
-Open the project folder
+- Open the project folder
 
-Double-click index.html
+- Double-click index.html
 
 OR
 
-Right-click and open with your browser
+- Right-click and open with your browser
 
-Optional (for live preview):
+- Optional (for live preview):
 
-Use Live Server in VS Code
+- Use Live Server in VS Code
 
 **📚 What I Learned**
 
-I learned how to structure a webpage using HTML and organize content with sections like headers and services. I also improved my CSS skills by using Flexbox to center layouts and make the site responsive.
+- How to manipulate the DOM in real time using event listeners and textContent
 
-I learned how to use JavaScript and the DOM to update content dynamically when a user clicks a button. Overall, I now better understand how HTML, CSS, and JavaScript work together to build a functional and interactive website.
+- Using IntersectionObserver to trigger scroll animations efficiently without scroll event overhead
+
+- Building a fully responsive layout with Flexbox and Grid across multiple breakpoints
+
+- How CSS custom properties create a consistent design system across an entire stylesheet
+
+- That the difference between a working project and a polished one lives in the details — hover states, transition timing, and image accuracy
 
 **🌐 Live Website**
 
