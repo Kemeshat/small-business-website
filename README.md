@@ -42,4 +42,4 @@ OR
 
 **🌐 Live Website**
 
-https://kemeshat.github.io/chubbys-breakfast-cafe/
+https://kemeshat.github.io/A-dynamic-small-business-landing-page/
