@@ -5,15 +5,21 @@ Chubby's Breakfast Café is a responsive landing page for a small breakfast rest
 **💻 Technologies Used**
 
 HTML
+
 CSS (Flexbox for layout, responsive design)
+
 JavaScript (DOM manipulation)
 
 **🚀 How to Run the Project**
 
 Download or clone the repository
+
 Open the project folder
+
 Double-click index.html
+
 OR
+
 Right-click and open with your browser
 
 Optional (for live preview):
